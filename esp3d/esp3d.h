@@ -30,7 +30,7 @@ class Esp3D
 {
 public:
     Esp3D();
-    void begin(uint16_t startdelayms = 8000, uint16_t recoverydelayms = 8000);
+    void begin(uint16_t startdelayms = 60000, uint16_t recoverydelayms = 8000);
     void process();
 };
 #endif

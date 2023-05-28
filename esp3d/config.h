@@ -23,13 +23,13 @@
 #define REPOSITORY "https://github.com/luc-github/ESP3D"
 
 //Customize ESP3D ////////////////////////////////////////////////////////////////////////
-#define ESP8266_MODEL_NAME "ESP8266"
-#define ESP8266_MODEL_URL "http://espressif.com/en/products/esp8266/"
-#define ESP32_MODEL_NAME "ESP32"
-#define ESP32_MODEL_URL "https://www.espressif.com/en/products/hardware/esp-wroom-32/overview"
+#define ESP8266_MODEL_NAME "Marlin 3D Printer"
+#define ESP8266_MODEL_URL "https://marlinfw.org"
+//#define ESP32_MODEL_NAME "ESP32"
+//#define ESP32_MODEL_URL "https://www.espressif.com/en/products/hardware/esp-wroom-32/overview"
 #define ESP_MODEL_NUMBER "ESP3D 2.1"
-#define ESP_MANUFACTURER_NAME "Espressif Systems"
-#define ESP_MANUFACTURER_URL "http://espressif.com"
+#define ESP_MANUFACTURER_NAME "Marlin"
+#define ESP_MANUFACTURER_URL "https://marlinfw.org"
 //default name if no mac address is valid
 #define ESP_DEFAULT_NAME "3D Printer"
 //if commented name will follow mac address 3 last digits
