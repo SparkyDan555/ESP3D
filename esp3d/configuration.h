@@ -106,9 +106,19 @@
 // Enable http server
 #define HTTP_FEATURE 
 
-// Use telnet server
-// Enable telnet light (raw tcp) communications
-#define TELNET_FEATURE 
+/* Use telnet server
+ * Enable telnet light (raw tcp) communications
+ */
+#define TELNET_FEATURE
+
+/* Disable telnet welcome message
+ */
+#define DISABLE_TELNET_WELCOME_MESSAGE
+
+/* Use Websocket server
+ * Enable websocket communications
+ */
+#define WS_DATA_FEATURE
 
 // Enable notifications
 // Allows to send notifications to the user
@@ -257,6 +267,28 @@
 #define ESP_SAVE_SETTINGS SETTINGS_IN_EEPROM
 
 
+// Enable log mode
+// Do not do this when connected to printer !!!
+// be noted all upload may failed if enabled
+// LOG_OUTPUT_SERIAL0
+// LOG_OUTPUT_SERIAL1
+// LOG_OUTPUT_SERIAL2
+// LOG_OUTPUT_TELNET
+// LOG_OUTPUT_WEBSOCKET
+//#define ESP_LOG_FEATURE LOG_OUTPUT_SERIAL0
+
+//#define ESP3D_LOG_LEVEL LOG_LEVEL_DEBUG
+
+#ifdef ESP_LOG_FEATURE
+#define LOG_ESP3D_BAUDRATE 115200
+#define LOG_ESP3D_OUTPUT_PORT 8000
+#endif  // ESP_LOG_FEATURE
+
+// Enable benchmark report in dev console
+// #define ESP_BENCHMARK_FEATURE
+
+// Disable sanity check at compilation
+#define ESP_NO_SANITY_CHECK
 
 /************************************
 *
